@@ -1,0 +1,69 @@
+body {
+  background: #476072;
+  color: #5a6275;
+}
+.page-template {
+  max-width: 600px;
+  background: #e9ebee;
+  border: 1px solid #7eccef;
+  border-radius: 7px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px;
+}
+.mainData {
+  text-align: center;
+  line-height: 1.1;
+  margin: 25px;
+}
+
+#city {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600px;
+  color: #293b5f;
+  margin-bottom: 5px;
+}
+#now-temp {
+  font-size: 28px;
+  margin: 0 auto;
+}
+#weather {
+  font-size: 15px;
+  margin: 0 auto;
+}
+#units {
+  font-size: 15px;
+  color: #537eba;
+  position: relative;
+  top: -10px;
+  font-weight: 600;
+}
+
+.forecast-container {
+  border: 1px solid #7eccef;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.weekDay {
+  text-align: center;
+  font-weight: 700;
+}
+.emoji {
+  text-align: center;
+  font-size: 25px;
+}
+.temperature {
+  text-align: center;
+}
+
+.button-style {
+  background: #709cda;
+  color: white;
+}
+.button-style:hover {
+  background: #537eba;
+  color: white;
+}
