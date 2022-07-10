@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>WeatherApp</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="source/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="page-template">
+        <div class="row">
+          <div class="col-2-9">
+            <form class="d-flex" id="city-form" role="search">
+              <div class="col-6">
+                <input
+                  class="form-control me-2"
+                  id="city-form-input"
+                  type="search"
+                  placeholder="Enter a city name"
+                  aria-label="Search"
+                />
+              </div>
+              <div class="col-3">
+                <button
+                  class="btn btn-outline button-style"
+                  id="city-search-buttons"
+                  type="submit"
+                >
+                  Search
+                </button>
+              </div>
+              <div class="col-3">
+                <button
+                  class="btn btn-success w-100"
+                  id="current-location-button"
+                >
+                  Current city
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="mainData">
+          <p id="city">LVIV</p>
+          <p id="current-time"></p>
+          <span id="now-temp"> 17</span>
+          <span id="units"> <a href="#" id="celcius">°C </a></span>
+          <p id="weather"><i>sunny</i></p>
+        </div>
+        <div class="forecast-container">
+          <div class="row">
+            <div class="col-2">
+              <div class="weekDay">Mon</div>
+              <div class="emoji">🌤️</div>
+              <div class="temperature">17°C</div>
+            </div>
+            <div class="col-2">
+              <div class="weekDay">Tue</div>
+              <div class="emoji">☀️</div>
+              <div class="temperature">18°C</div>
+            </div>
+            <div class="col-2">
+              <div class="weekDay">Wed</div>
+              <div class="emoji">🌤️</div>
+              <div class="temperature">20°C</div>
+            </div>
+            <div class="col-2">
+              <div class="weekDay">Thur</div>
+              <div class="emoji">🌧️</div>
+              <div class="temperature">19°C</div>
+            </div>
+            <div class="col-2">
+              <div class="weekDay">Fri</div>
+              <div class="emoji">⛈️</div>
+              <div class="temperature">16°C</div>
+            </div>
+            <div class="col-2">
+              <div class="weekDay">Sat</div>
+              <div class="emoji">⛈️</div>
+              <div class="temperature">16°C</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="source/script.js"></script>
+  </body>
+</html>
